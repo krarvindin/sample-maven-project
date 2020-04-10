@@ -3,6 +3,9 @@
  */
 package com.arvind;
 
+import com.arvind.service.GreetingsService;
+import com.arvind.service.impl.GreetingsServiceImpl;
+
 /**
  * @author Akrishnan37
  *
@@ -10,6 +13,8 @@ package com.arvind;
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		System.out.println("Hello, world!");
+		
+		GreetingsService greetingsService = new GreetingsServiceImpl();
+		System.out.println(greetingsService.sayHello("Arvind"));
 	}
 }
